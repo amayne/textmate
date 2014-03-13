@@ -224,8 +224,8 @@
 	[self checkExitStatus:exitStatus forCommand:arguments errorText:errorText];
 
 	// Success, send the diff to TextMate
-	arguments = [NSArray arrayWithObjects:[NSString stringWithFormat:@"%s/bin/mate", getenv("TM_SUPPORT_PATH")], @"-a", nil];
-	exitStatus = [NSTask executeTaskWithArguments:arguments input:diffData outputData:nil errorString:&errorText];
+	NSString* matePath = [[[NSProcessInfo processInfo] environment] objectForKey:@"TM_MATE"];
+	exitStatus = [NSTask executeTaskWithArguments:@[ matePath, @"--async" ] input:diffData outputData:nil errorString:&errorText];
 	[self checkExitStatus:exitStatus forCommand:arguments errorText:errorText];
 }
 
