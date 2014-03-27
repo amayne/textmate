@@ -27,9 +27,6 @@ OneShotNSColorFromTriplet(BackColorForFileDeleted, 0xF5, 0xBD, 0xBD)
 OneShotNSColorFromTriplet(ForeColorForFileConflict, 0x00, 0x80, 0x80)
 OneShotNSColorFromTriplet(BackColorForFileConflict, 0xA3, 0xCE, 0xD0)
 
-OneShotNSColorFromTriplet(ForeColorForFileIgnore, 0x80, 0x00, 0x80)
-OneShotNSColorFromTriplet(BackColorForFileIgnore, 0xED, 0xAE, 0xF5)
-
 OneShotNSColorFromTriplet(ForeColorForExternal, 0xFF, 0xFF, 0xFF)
 OneShotNSColorFromTriplet(BackColorForExternal, 0x00, 0x00, 0x00)
 
